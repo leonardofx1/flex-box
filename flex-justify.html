@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .conteiner {
+        display: flex;
+        background-color: lightseagreen;
+        justify-content: flex-start;
+        height: 100px;
+        width: 200px;
+    }
+
+    p {
+        margin: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .conteiner-end {
+        display: flex;
+        justify-content: flex-end;
+        background: darkgoldenrod;
+        height: 100px;
+        width: 200px;
+    }
+
+    .conteiner-between {
+        display: flex;
+        background-color: brown;
+        height: 100px;
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    .conteiner-around {
+        display: flex;
+        background-color: aquamarine;
+        height: 100px;
+        width: 250px;
+        justify-content: space-around;
+        /*flex-flow: wrap;*/
+    }
+</style>
+
+<body>
+    <p>flex-start</p>
+    <section class="conteiner">
+        <p>ola</p>
+        <p>helo</p>
+        <p>world</p>
+    </section>
+    <p>flex-end</p>
+    <section class="conteiner-end">
+        <p>inicio</p>
+        <p>meio</p>
+        <p>fim</p>
+    </section>
+    <p>space-between</p>
+    <section class="conteiner-between">
+        <p>bet</p>
+        <p>we</p>
+        <p>en</p>
+    </section>
+    <p>space-around</p>
+    <section class="conteiner-around">
+        <p>demo</p>
+        <p>vida</p>
+        <p>margem</p>
+    </section>
+</body>
+
+</html>
